@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { CheckCircle } from "lucide-react";
 import { slpOverview, slpServices } from "@/data/services-slp";
 import { PageHero } from "@/components/layout/page-hero";
@@ -5,6 +6,12 @@ import { SectionWrapper } from "@/components/layout/section-wrapper";
 import { CtaSection } from "@/components/layout/cta-section";
 import { ServiceCard } from "@/components/service-card";
 import { MotionWrapper } from "@/components/motion-wrapper";
+
+export const metadata: Metadata = {
+  title: "Speech Language Pathology",
+  description:
+    "Speech-Language Pathology services for children — language development, articulation, fluency, literacy, AAC, and social communication in Ottawa.",
+};
 
 const slpAreas = [
   "Early language development and milestones",

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Info, Users } from "lucide-react";
 import { groupTherapyOverview, groupPrograms } from "@/data/group-programs";
 import { PageHero } from "@/components/layout/page-hero";
@@ -5,6 +6,12 @@ import { SectionWrapper } from "@/components/layout/section-wrapper";
 import { CtaSection } from "@/components/layout/cta-section";
 import { ProgramCard } from "@/components/program-card";
 import { MotionWrapper } from "@/components/motion-wrapper";
+
+export const metadata: Metadata = {
+  title: "Group Therapy Programs",
+  description:
+    "Interdisciplinary group therapy programs for autistic children and youth — Craft & Connect, Game Explorers, Cooking, D&D, Dance, and more in Ottawa.",
+};
 
 export default function GroupTherapyPage() {
   return (

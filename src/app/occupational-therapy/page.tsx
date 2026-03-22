@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { CheckCircle } from "lucide-react";
 import { otOverview, otServices } from "@/data/services-ot";
 import { PageHero } from "@/components/layout/page-hero";
@@ -5,6 +6,12 @@ import { SectionWrapper } from "@/components/layout/section-wrapper";
 import { CtaSection } from "@/components/layout/cta-section";
 import { ServiceCard } from "@/components/service-card";
 import { MotionWrapper } from "@/components/motion-wrapper";
+
+export const metadata: Metadata = {
+  title: "Occupational Therapy",
+  description:
+    "Occupational Therapy services for children — sensory processing, handwriting, fine & gross motor skills, self-care, feeding therapy, and executive functioning in Ottawa.",
+};
 
 const otAreas = [
   "Sensory processing and self-regulation",

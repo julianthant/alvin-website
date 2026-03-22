@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import {
   CheckCircle,
@@ -17,6 +18,16 @@ export function generateStaticParams() {
   return slpServices.map((service) => ({
     slug: service.slug,
   }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const service = slpServices.find((s) => s.slug === slug);
+  if (!service) return {};
+  return {
+    title: service.title,
+    description: service.shortDescription || `${service.title} — Speech-Language Pathology services at Achieve Therapy Centre in Ottawa.`,
+  };
 }
 
 interface SLPServicePageProps {
