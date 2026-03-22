@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import NextLink from "next/link";
+import { asset } from "@/lib/assets";
 import { usePathname } from "next/navigation";
 import { Dropdown, Button as HeroButton, Label } from "@heroui/react";
 import { ChevronDown, Menu, Phone } from "lucide-react";
@@ -65,7 +66,7 @@ export function SiteNavbar() {
         {/* ---- Logo ---- */}
         <NextLink href="/" className="relative shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 rounded-sm">
           <Image
-            src="/logo-transparent.png"
+            src={asset("logo-transparent.png")}
             alt="Achieve Therapy Centre"
             width={400}
             height={100}
@@ -161,7 +162,7 @@ export function SiteNavbar() {
                   <SheetTitle>
                     <NextLink href="/" onClick={closeMobile} className="inline-block">
                       <Image
-                        src="/logo-transparent.png"
+                        src={asset("logo-transparent.png")}
                         alt="Achieve Therapy Centre"
                         width={140}
                         height={35}

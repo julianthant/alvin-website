@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { asset } from "@/lib/assets";
 import { HeroBackground } from "@/components/hero-background";
 import { FloatingShapes } from "@/components/floating-shapes";
 import { SectionDivider } from "@/components/section-divider";
@@ -246,7 +247,7 @@ export default function Home() {
             <div className="relative">
               <div className="rounded-2xl p-1 shadow-2xl ring-1 ring-primary/10">
                 <Image
-                  src="/images/liam-balls-in.jpg"
+                  src={asset("images/liam-balls-in.jpg")}
                   alt="Child in sensory gym with colorful balls during therapy session"
                   width={600}
                   height={450}

@@ -2,16 +2,16 @@
 
 import { useRef, useEffect, useState } from "react";
 import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
+import { asset } from "@/lib/assets";
 
 const TOTAL_FRAMES = 569;
 const PAD = 4;
 const MOBILE_BREAKPOINT = 768;
-// Load first few frames immediately for fast first paint, rest in background
 const PRIORITY_FRAMES = 10;
 
 const frameUrls = Array.from(
   { length: TOTAL_FRAMES },
-  (_, i) => `/frames/frame-${String(i + 1).padStart(PAD, "0")}.jpg`
+  (_, i) => asset(`frames/frame-${String(i + 1).padStart(PAD, "0")}.jpg`)
 );
 
 export function HeroBackground() {

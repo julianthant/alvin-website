@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { asset } from "@/lib/assets";
 import {
   Target,
   Eye,
@@ -104,7 +105,7 @@ export default function AboutPage() {
                 <div className="flex h-full flex-col gap-4">
                   <div className="flex items-center gap-4">
                     <Image
-                      src={founder.photo}
+                      src={asset(founder.photo)}
                       alt={founder.name}
                       width={72}
                       height={72}
@@ -144,7 +145,7 @@ export default function AboutPage() {
         <MotionWrapper delay={0.1}>
           <div className="mx-auto mt-8 max-w-4xl">
             <Image
-              src="/images/jon-listening.jpg"
+              src={asset("images/jon-listening.jpg")}
               alt="Therapist engaged in a therapy session"
               width={900}
               height={500}

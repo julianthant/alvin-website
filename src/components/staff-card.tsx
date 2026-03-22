@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { Chip, Modal, Button } from "@heroui/react";
+import { asset } from "@/lib/assets";
 import type { StaffMember, StaffCategory } from "@/data/staff";
 
 function getCategoryColor(
@@ -68,7 +69,7 @@ export function StaffCard({ member }: StaffCardProps) {
           <div className="flex flex-col h-full items-center gap-2 p-4 text-center sm:gap-3 sm:p-5 md:p-6">
             {showPhoto ? (
               <Image
-                src={member.photo}
+                src={asset(member.photo)}
                 alt={member.name}
                 width={80}
                 height={80}
@@ -104,7 +105,7 @@ export function StaffCard({ member }: StaffCardProps) {
               <div className="flex items-center gap-4">
                 {showPhoto && (
                   <Image
-                    src={member.photo}
+                    src={asset(member.photo)}
                     alt={member.name}
                     width={56}
                     height={56}

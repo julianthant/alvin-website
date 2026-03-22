@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { siteConfig } from "@/data/site";
 import { SocialLinks } from "@/components/social-links";
+import { asset } from "@/lib/assets";
 
 const serviceLinks = [
   { label: "Occupational Therapy", href: "/occupational-therapy" },
@@ -28,7 +29,7 @@ export function Footer() {
           <div className="space-y-4 sm:col-span-2 lg:col-span-1">
             <Link href="/" className="inline-block">
               <Image
-                src="/logo-transparent.png"
+                src={asset("logo-transparent.png")}
                 alt="Achieve Therapy Centre"
                 width={400}
                 height={100}
