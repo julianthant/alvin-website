@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:achievetherapycentre.com)",
+      "WebFetch(domain:www.ontheball.ca)",
+      "Bash(npx:*)",
+      "Bash(# Copy all files from temp to main directory \\(excluding .git\\)\ncp -r /c/Users/Julian/Projects/alvin-website-temp/public /c/Users/Julian/Projects/alvin-website/ && \\\\\ncp -r /c/Users/Julian/Projects/alvin-website-temp/src /c/Users/Julian/Projects/alvin-website/ && \\\\\ncp -r /c/Users/Julian/Projects/alvin-website-temp/node_modules /c/Users/Julian/Projects/alvin-website/ && \\\\\ncp /c/Users/Julian/Projects/alvin-website-temp/.gitignore /c/Users/Julian/Projects/alvin-website/ && \\\\\ncp /c/Users/Julian/Projects/alvin-website-temp/eslint.config.mjs /c/Users/Julian/Projects/alvin-website/ && \\\\\ncp /c/Users/Julian/Projects/alvin-website-temp/next.config.ts /c/Users/Julian/Projects/alvin-website/ && \\\\\ncp /c/Users/Julian/Projects/alvin-website-temp/next-env.d.ts /c/Users/Julian/Projects/alvin-website/ && \\\\\ncp /c/Users/Julian/Projects/alvin-website-temp/package.json /c/Users/Julian/Projects/alvin-website/ && \\\\\ncp /c/Users/Julian/Projects/alvin-website-temp/package-lock.json /c/Users/Julian/Projects/alvin-website/ && \\\\\ncp /c/Users/Julian/Projects/alvin-website-temp/postcss.config.mjs /c/Users/Julian/Projects/alvin-website/ && \\\\\ncp /c/Users/Julian/Projects/alvin-website-temp/README.md /c/Users/Julian/Projects/alvin-website/ && \\\\\ncp /c/Users/Julian/Projects/alvin-website-temp/tsconfig.json /c/Users/Julian/Projects/alvin-website/ && \\\\\necho \"Done copying\")",
+      "Bash(npm install:*)",
+      "Bash(curl:*)"
+    ]
+  }
+}
